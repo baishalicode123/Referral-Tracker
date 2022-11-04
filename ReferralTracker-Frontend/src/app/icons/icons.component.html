@@ -1,0 +1,46 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Update Referral status</h4>
+                        <p class="card-category"> Insert Data and know the status </p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="Eid"><span class="req">* </span> Eid: <small>This will be your Id
+                                    </small> </label>
+                            <input required type="number" [(ngModel)]="info.eid" name="eid" id="eid"
+                                class="form-control phone" maxlength="28" />
+                          </div>
+                
+                        <div class="form-group">
+                            <label for="Name"><span class="req">* </span> Name: <small>This will be the name of person whom you 
+                              referred      </small> </label>
+                            <input required type="text" [(ngModel)]="info.name" name="name" id="name"
+                                class="form-control phone" maxlength="28" />
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="Experience"><span class="req">* </span> Experience: <small> His experience in numbers
+                                    </small> </label>
+                            <input required type="number" [(ngModel)]="info.experience" name="experience" id="experience"
+                                class="form-control phone" maxlength="28"  />
+                        </div>
+
+                        <div>
+                            <input type="file" (change)='onUploadFiles($any($event.target).files)' name="files" multiple class="form-control" />
+                        </div>
+
+                            <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="addOneReferral()">Refer this person</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

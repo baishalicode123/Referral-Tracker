@@ -1,0 +1,50 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Schedule Interview</h4>
+                        <p class="card-category"> Select dates for respective rounds </p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                          <div class="form-group">
+
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Select an option</mat-label>
+                                    <mat-select [(ngModel)]="info.status">
+                                      <mat-option>None</mat-option>
+                                      <mat-option value="Referred">Referred</mat-option>
+                                      <mat-option value="Accepted">Accepted</mat-option>
+                                      <mat-option value="R1 InterView">R1 InterView </mat-option>
+                                      <mat-option value="R2 InterView"> R2 InterView </mat-option>
+                                      <mat-option value="R3 InterView">R3 InterView </mat-option>
+                                      <mat-option value="HR Interview">HR InterView </mat-option>
+                                      <mat-option value="Offer Made">Offer Made </mat-option>
+                                      <mat-option value="Offer Accepted">Offer Accepted </mat-option>
+                                      <mat-option value="Rejected">Rejected</mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                                  
+                                  <p>You selected: {{info.status}}</p>
+                          </div>
+                
+                        <div class="form-group">
+                            <label for="start">Start date:</label>
+
+                            <input type="date" id="start" name="trip-start"
+                            [(ngModel)]="info.referred" value="2022-05-22"
+                            min="2022-05-01" max="2022-05-31">
+                        </div>
+                            
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="updateReferral()">Schedule</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,42 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Add new Job</h4>
+                        <p class="card-category"> Enter details of Job</p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                        <div class="form-group">
+                            <label for="Title"><span class="req">* </span> Job Title: <small>This will be the name of person whom you 
+                              referred      </small> </label>
+                            <input required type="text" [(ngModel)]="info.title" name="title" id="title"
+                                class="form-control phone" maxlength="28" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Location"><span class="req">* </span> Location: <small>This will be the name of person whom you 
+                              referred      </small> </label>
+                            <input required type="text" [(ngModel)]="info.location" name="location" id="location"
+                                class="form-control phone" maxlength="28" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Description"><span class="req">* </span> Description: <small>This will be the name of person whom you 
+                              referred      </small> </label>
+                            <input required type="text" [(ngModel)]="info.description" name="description" id="description"
+                                class="form-control phone" maxlength="28" />
+                        </div>
+
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-right" (click)="addOneJob()">Add Job</button>
+                        <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

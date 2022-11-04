@@ -1,0 +1,52 @@
+1. Emp should be able to (Mrunali)
+	view job posting and refer someone - done
+	see his/her referral history - Pending
+	state of referral - Pending
+	see leaderboard - Pending
+
+
+2. HR should be able to (Baishali)
+	post new job 
+	bulk upload job 
+	view referrals
+	update Referal status ( accept / update state / schedule interview) - Pending
+	download resume
+
+3. Login 
+	google sign in and JWT Token with 24 hrs validity
+	view picture from accolite gmail account
+
+
+------------------------------------
+
+Design Document - Saswat
+	DB design 
+
+---------------------------------
+DB Design : 
+
+Job
+Referal
+User
+Model for lifecycle
+
+---------------------
+
+Tasks : 
+Design Document ( Saswat / Gokhul)
+Database schema ( Harsh )
+Integrate code 
+
+------
+0 - Referred
+1 - Accpeted
+2 - R1 interview
+3 - R2 interview
+4 - R3 interview
+5 - HR interview
+6 - Offer Made
+7 - Offer accpeted
+9 - Reject
+
+LifeCycle
+State | Last update date | User | Comment / feedback
